@@ -36,9 +36,8 @@ $query->execute();
     <h1>Book Club Book Tracker</h1>
 </header>
 <nav>
-    <a>Add</a>
+    <a href="add.php">Add</a>
     <a>Back to top</a>
-    <a>Filter (TBC)</a>
 </nav>
 <main>
 
