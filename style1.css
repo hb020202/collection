@@ -1,18 +1,35 @@
 * {
     box-sizing: border-box;
 }
+body {
+    letter-spacing: 1px;
+    background-color: #e1e5ee;
+}
 header, nav {
     display: grid;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     padding: 15px 0;
 }
-body {
-    letter-spacing: 1px;
-    /*background-color: #e1e5ee;*/
+nav {
+    width: 50%;
+    grid-template-columns: 25% 50% 25%;
+
+    margin: auto;
 }
 main {
     width: 80%;
     /*color: black;*/
     margin: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+
 }
+
+div {
+    border: 2px solid black;
+    margin: 5%;
+
+}
+

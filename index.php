@@ -1,5 +1,5 @@
 <?php
-$db = new PDO ('mysql:host=db; dbname=Proj2Collection', 'root', 'password');
+$db = new PDO ('mysql:host=db; dbname=collection', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 $query = $db->prepare("SELECT * FROM `books`;");
@@ -34,16 +34,16 @@ $query->execute();
     <h1>Book Club Book Tracker</h1>
 </header>
 <nav>
-    <a class="btn">Add</a>
+    <a>Add</a>
     <a>Back to top</a>
-    <a class="btn">Filter (TBC)</a>
+    <a>Filter (TBC)</a>
 </nav>
 <main>
 
     <?php
     $list = $query->fetchAll();
     foreach ($list as $key=>$value) {
-        echo "Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick<br><br>" . $value['title'] . "<br>" . $value['author'] . "<br>" . $value['genre'] . "<br><br><br>";
+        echo "<div background-color='black'>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick<br><br>" . $value['title'] . "<br>" . $value['author'] . "<br>" . $value['genre'] . "<br><br><br></div>";
     }
     ?>
 
