@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style1.css" type="text/css">
-
 </head>
-
 <body>
 <nav>
     <a href="index.php">Home</a>

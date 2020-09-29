@@ -1,21 +1,8 @@
 <?php
 $db = new PDO ('mysql:host=db; dbname=collection', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
 $query = $db->prepare("SELECT * FROM `books`;");
 $query->execute();
-
-//$list = $query->fetchAll();
-//foreach ($list as $key=>$value) {
-//    echo "Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick<br><br>" . $value['title'] . "<br>" . $value['author'] . "<br>" . $value['genre'] . "<br><br><br>";
-//}
-
-
-
-
-
-
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -28,9 +15,7 @@ $query->execute();
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style1.css" type="text/css">
-
 </head>
-
 <body>
 <header>
     <h1>Book Club Book Tracker</h1>
@@ -40,14 +25,12 @@ $query->execute();
     <a>Back to top</a>
 </nav>
 <main>
-
     <?php
     $list = $query->fetchAll();
     foreach ($list as $key=>$value) {
         echo "<div background-color='black'><p class='pick'>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick</p><br><p class='title'>" . $value['title'] . "</p><br>" . $value['author'] . "<br><p class='genre'>" . $value['genre'] . "</p></div>";
     }
     ?>
-
 </main>
 </body>
 </html>
