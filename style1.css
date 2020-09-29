@@ -40,7 +40,13 @@ div {
     margin: 5%;
     padding: 10px;
     background-color: #c7ccdb;
-    color: black;
+    color: #000000;
     text-align: center;
+    align-content: center;
 }
-
+a {
+    margin: 5%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
