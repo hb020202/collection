@@ -24,7 +24,7 @@
     <?php
     $list = $query->fetchAll();
     foreach ($list as $key=>$value) {
-        echo "<div background-color='black'><p class='pick'>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick</p><br><p class='title'>" . $value['title'] . "</p><br>" . $value['author'] . "<br><p class='genre'>" . $value['genre'] . "</p></div>";
+        echo "<div><p>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick</p><br><p class='title'>" . $value['title'] . "</p><br>" . $value['author'] . "<br><p class='genre'>" . $value['genre'] . "</p></div>";
     }
     ?>
 </main>
