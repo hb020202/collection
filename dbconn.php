@@ -9,11 +9,11 @@ function connect(){
     $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     return $pdo;
 }
-connect();
+$connection = connect();
 
-function getData() {
-    $PDO->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    $query = $PDO->prepare("SELECT `pick_order`, `picker`, `title`, `author`, `genre` FROM `books`;");
+function getData($connection) {
+    $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $query = $pdo->prepare("SELECT `pick_order`, `picker`, `title`, `author`, `genre` FROM `books`;");
     $query->execute();
 }
-getData();
+getData($connection);
