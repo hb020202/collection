@@ -17,10 +17,10 @@
     <h1>Book Club Book Tracker</h1>
 </header>
 <nav>
-    <a href="add.php">Add</a>
-    <a>Back to top</a>
+    <a class="btn" href="add.php">Add</a>
+    <a class="btn" href="#top">Back to top</a>
 </nav>
-<main>
+<main id="top">
     <?php
     foreach ($data as $value) {
         echo "<div><p>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick</p><br><p class='title'>" . $value['title'] . "</p><br>" . $value['author'] . "<br><p class='genre'>" . $value['genre'] . "</p></div>";
