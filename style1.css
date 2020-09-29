@@ -4,6 +4,8 @@
 body {
     letter-spacing: 1px;
     background-color: #e1e5ee;
+    font-family: 'Josefin Slab', serif;
+
 }
 header, nav {
     display: grid;
@@ -20,16 +22,28 @@ nav {
 }
 main {
     width: 80%;
-    /*color: black;*/
     margin: auto;
     display: grid;
     grid-template-columns: 40% 40%;
-
+    justify-content: space-around;
+}
+p {
+    margin: 0;
 }
 
+.title {
+    font-variant:small-caps;
+    font-size: 150%;
+}
+.genre {
+    font-size: 80%;
+}
 div {
-    border: 2px solid black;
+    border: 1px solid #2a324b;
     margin: 5%;
-
+    padding: 10px;
+    background-color: #c7ccdb;
+    color: black;
+    text-align: center;
 }
 

@@ -26,7 +26,9 @@ $query->execute();
     <meta name="description" content="Book tracker">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style1.css" type="text/css">
+
 </head>
 
 <body>
@@ -43,7 +45,7 @@ $query->execute();
     <?php
     $list = $query->fetchAll();
     foreach ($list as $key=>$value) {
-        echo "<div background-color='black'>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick<br><br>" . $value['title'] . "<br>" . $value['author'] . "<br>" . $value['genre'] . "<br><br><br></div>";
+        echo "<div background-color='black'><p class='pick'>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick</p><br><p class='title'>" . $value['title'] . "</p><br>" . $value['author'] . "<br><p class='genre'>" . $value['genre'] . "</p></div>";
     }
     ?>
 
