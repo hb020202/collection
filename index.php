@@ -22,8 +22,7 @@
 </nav>
 <main>
     <?php
-    $list = $query->fetchAll();
-    foreach ($list as $value) {
+    foreach ($data as $value) {
         echo "<div><p>Book# " . $value['pick_order'] . " - " . $value['picker'] . "'s Pick</p><br><p class='title'>" . $value['title'] . "</p><br>" . $value['author'] . "<br><p class='genre'>" . $value['genre'] . "</p></div>";
     }
     ?>
