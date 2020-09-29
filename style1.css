@@ -6,12 +6,17 @@ body {
     background-color: #e1e5ee;
     font-family: 'Josefin Slab', serif;
 }
+h1 {
+    margin: 0;
+    padding-top: 50px;
+
+}
 header, nav {
     display: grid;
     margin: auto;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px;
 }
 nav {
     width: 50%;
@@ -37,14 +42,11 @@ p {
 }
 div {
     border: 1px solid #2a324b;
-    margin: 5%;
-    padding: 10px;
     background-color: #c7ccdb;
     color: #000000;
-    text-align: center;
-    align-content: center;
 }
-a {
+a,
+div {
     margin: 5%;
     padding: 10px;
     text-align: center;
