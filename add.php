@@ -15,27 +15,31 @@ require('dbadddata.php');
         <title>Book Club Book Tracker</title>
     </head>
     <body>
-        <nav>
-            <a href="index.php">Home</a>
-            <a>Back to top</a>
-        </nav>
+    <nav>
+        <a class="btn" href="index.php">Home</a>
+    </nav>
         <header>
             <h1>Book Club Book Tracker</h1>
             <h2>Add the next book here</h2>
         </header>
+
         <form method="post">
             <div class="form1">
-
-                <label for="title_input">Title</label>
-                <input id="title_input" name="title_input" type="text">
-
-                <label for="author_input">Author</label>
+                <div>
+                    <label for="title_input">Title</label>
+                </div>
+                <input id="title_input" name="title_input" type="text" required="">
+                <div>
+                    <label for="author_input">Author</label>
+                </div>
                 <input id="author_input" name="author_input" type="text" required="">
-
-                <label for="genre_input">Genre</label>
+                <div>
+                    <label for="genre_input">Genre</label>
+                </div>
                 <input id="genre_input" name="genre_input" type="text" required="">
-
-                <label for="picker_select">Picker</label>
+                <div>
+                    <label for="picker_select">Picker</label>
+                </div>
                 <select id="picker_select" name="picker_select">
                     <option value="Alex">Alex</option>
                     <option value="Holly">Holly</option>
@@ -43,13 +47,18 @@ require('dbadddata.php');
                     <option value="Sam">Sam</option>
                     <option value="Tiley">Tiley</option>
                 </select>
+                <div>
+                    <label for="pick_order">Pick number</label>
+                </div>
+                <input id="pick_order" name="pick_order" type="number" required="">
+                <div>
+                    <label for="cover_input">Cover URL</label>
+                </div>
 
-                <label for="pick_order">Pick number</label>
-                <input id="pick_order" name="pick_order" type="number" step="1" required="">
-                <label for="cover_input">Cover URL</label>
                 <input id="cover_input" name="cover_input" type="text">
-
-                <input type="submit" class="btn" value="Add book">
+                <div>
+                    <input type="submit" class="add_btn btn" value="Add book">
+                </div>
             </div>
         </form>
 

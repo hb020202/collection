@@ -7,3 +7,52 @@ body {
     font-family: 'Josefin Slab', serif;
     color: #000000;
 }
+header, nav {
+    display: grid;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+h1,
+h2,
+header {
+    margin:auto;
+    padding:10px;
+}
+
+nav {
+    grid-template-columns: 15%;
+    margin: auto;
+    padding: 30px 10px 10px;
+}
+.form1 {
+    border: 1px solid #2a324b;
+    background-color: #c7ccdb;
+    color: #000000;
+    border-radius: 3px;
+    width: 50%;
+    margin:auto;
+}
+a,
+.form1 {
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+.btn:link,
+.btn:visited {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #2a324b;
+    background-color: #c7ccdb;
+    border-radius: 3px;
+}
+.btn:hover {
+    background-color: #e1e5ee;
+    transition-duration: 0.5s;
+    border-color: #6d7275;
+    font-weight: bold;
+}
+.add_btn{
+    margin: 10px;
+}
