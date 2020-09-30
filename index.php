@@ -1,5 +1,5 @@
-
-<?php require('dbconn.php'); ?>
+<?php require('dbconn.php');
+require('dbgetdata.php'); ?>
 <!doctype html>
 <html lang="en">
 <head>
