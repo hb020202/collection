@@ -1,4 +1,5 @@
-<?php require('dbconn.php');
+<?php
+require('dbconn.php');
 require('dbgetdata.php');
 $select_query = "SELECT `pick_order`, `picker`, `title`, `author`, `genre` FROM `books`;";
 $data = getData($connection, $select_query);
