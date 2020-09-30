@@ -3,12 +3,11 @@
  *
  * @param $connection
  *
- * @return mixed
+ * @return string & integer
  */
-function getData($connection) {
+function getData($connection, $query) {
     $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    $query = $connection->prepare("SELECT `pick_order`, `picker`, `title`, `author`, `genre` FROM `books`;");
-    $query->execute();
-    return $query->fetchAll();
+    $active_query = $connection->prepare($query);
+    $active_query->execute();
+    return $active_query->fetchAll();
 }
-$data = getData($connection);
