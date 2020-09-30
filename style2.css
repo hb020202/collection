@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    letter-spacing: 1px;
+    background-color: #e1e5ee;
+    font-family: 'Josefin Slab', serif;
+    color: #000000;
+}
