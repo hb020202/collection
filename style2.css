@@ -24,6 +24,7 @@ nav {
     grid-template-columns: 15%;
     margin: auto;
     padding: 30px 10px 10px;
+
 }
 .form1 {
     border: 1px solid #2a324b;
@@ -55,4 +56,20 @@ a,
 }
 .add_btn{
     margin: 10px;
+}
+@media screen and (max-width: 450px){
+
+    h1 {
+        font-size: 130%;
+    }
+    h2 {
+        font-size: 110%;
+    }
+    nav {
+        grid-template-columns: 20%;
+    }
+    .form1 {
+        width: 80%;
+    }
+
 }
