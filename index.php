@@ -26,6 +26,7 @@ $data = getData($connection, $select_query);
         </nav>
         <main id="top">
             <?php
+            sort($data );
             foreach ($data as $value) {
                 echo "<div><p>Book# " .
                     $value['pick_order'] . " - " .
