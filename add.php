@@ -39,7 +39,8 @@ require('dbadddata.php');
                 <div>
                     <label for="picker_select">Picker</label>
                 </div>
-                <select id="picker_select" name="picker_select">
+                <select id="picker_select" name="picker_select" required="">
+                    <option value="" disabled selected hidden>Select from dropdown</option>
                     <option value="Alex">Alex</option>
                     <option value="Holly">Holly</option>
                     <option value="Kim">Kim</option>
@@ -53,8 +54,7 @@ require('dbadddata.php');
                 <div>
                     <label for="cover_input">Cover URL</label>
                 </div>
-
-                <input id="cover_input" name="cover_input" type="text">
+                <input id="cover_input" name="cover_input" type="text" placeholder="Optional">
                 <div>
                     <input type="submit" class="add_btn btn" name="add_book" value="Add book">
                 </div>
