@@ -15,14 +15,13 @@ require('dbadddata.php');
         <title>Book Club Book Tracker</title>
     </head>
     <body>
-    <nav>
-        <a class="btn" href="index.php">Home</a>
-    </nav>
+        <nav>
+            <a class="btn" href="index.php">Home</a>
+        </nav>
         <header>
             <h1>Book Club Book Tracker</h1>
             <h2>Add the next book here</h2>
         </header>
-
         <form method="post">
             <div class="form1">
                 <div>
@@ -57,10 +56,9 @@ require('dbadddata.php');
 
                 <input id="cover_input" name="cover_input" type="text">
                 <div>
-                    <input type="submit" class="add_btn btn" value="Add book">
+                    <input type="submit" class="add_btn btn" name="add_book" value="Add book">
                 </div>
             </div>
         </form>
-
     </body>
 </html>
