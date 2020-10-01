@@ -3,6 +3,7 @@
  *
  * @param $connection
  *
+ * Redirects to a success page
  */
 function addData ($connection) {
     if ( isset( $_POST['add_book'] ) ) {
